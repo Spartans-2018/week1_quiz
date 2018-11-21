@@ -4,6 +4,7 @@ myrooms=[]
 with open("traffic.txt") as myfile:
     for i in myfile.readlines():
         mylist.append(i.strip().split(" "))
+print(mylist)
 # entries = sum(1 for i in mylist if i[2]=="I")
 # mylist.sort(key=lambda x:(x[2],x[0],x[1]))
 # myvistors= list(set(i[0] for i in mylist))
