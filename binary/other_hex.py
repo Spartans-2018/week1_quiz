@@ -40,8 +40,8 @@ def print_hex(digits):
 
     return result
 
-
-# print(decimal_to_hexo(16)) # should return 10
-# print(decimal_to_hexo(65536)) # should return FFFF
-# print(decimal_to_hexo(127))
-print(print_hex(to_hex(15)))
+# testing
+assert (print_hex(to_binary(12)) =="1100"),"binary convertion error"
+assert (print_hex(to_hex(16)) == "10"), "this is an exception" # should return 10
+assert (print_hex(to_hex(65536)) == "10000") # should return 10
+assert (print_hex(to_hex(15)) == "0F")
